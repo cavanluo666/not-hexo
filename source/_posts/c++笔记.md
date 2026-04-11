@@ -1,7 +1,7 @@
 ---
 abbrlink: ''
 categories: []
-cover: https://subingwen.cn/images/cpp1.png
+cover: https://ts3.tc.mm.bing.net/th/id/OIP-C._mMDJcNhCCrheYCJPHXa9wHaE4?dpr=3.5&pid=ImgDetMain&o=7&rm=3
 date: ''
 tags: []
 title: ''
