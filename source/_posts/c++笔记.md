@@ -1,11 +1,11 @@
 ---
 abbrlink: ''
 categories: []
-cover: https://ts3.tc.mm.bing.net/th/id/OIP-C._mMDJcNhCCrheYCJPHXa9wHaE4?dpr=3.5&pid=ImgDetMain&o=7&rm=3
+cover: https://img.246644.xyz/1000123948.jpg
 date: ''
 tags: []
-title: ''
-updated: '2026-04-11T18:44:06.633+08:00'
+title: c++笔记
+updated: '2026-04-12T13:28:25.797+08:00'
 ---
 ```markdown
 # ASCII码表
