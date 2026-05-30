@@ -401,5 +401,44 @@ int main()
 }
 ```
 
+### 多数据排序
+
+```cpp
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+struct Person {
+	string name;
+	int ch, ma, id;
+	int sum() {
+		return ch + ma;
+	}
+}a[1005];
+bool cmp(Person a, Person b) {
+	if (a.sum() == b.sum()) {
+		return a.id < b.id;
+	}
+	else {
+		return a.sum() > b.sum();
+	}
+}
+int main() {
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		cin >> a[i].name >> a[i].ch >> a[i].ma;
+		a[i].id = i;
+	}
+	//快速排序
+	sort(a + 1, a + 1 + n, cmp);
+	//输出
+	for (int i = 1; i <= n; i++) {
+		cout << a[i].name << " " << a[i].sum() << endl;
+	}
+	return 0;
+}
+```
+
 
 
