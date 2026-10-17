@@ -5,7 +5,7 @@ cover: https://img.246644.xyz/1000123948.jpg
 date: ''
 tags: []
 title: c++笔记
-updated: '2026-09-12T14:27:30.397+08:00'
+updated: '2026-10-17T14:31:47.929+08:00'
 ---
 # C++ 学习笔记
 
@@ -502,6 +502,29 @@ if(a%100!=0&&a%4==0||a%400==0)
 1.图灵(计算机之父)
 2.香农(提出信息熵)
 3.冯诺伊曼(体系结构)
+
+## 树的深度优先遍历
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 1e5 + 5;
+int n, a, b;
+vector<int> tr[N]; // 孩子存储法 vector 存普通树
+void dfs(int x) {
+	cout << x << " ";
+	for (auto y : tr[x]) // 遍历 tr 的子节点
+		dfs(y); // 以 y 为根的子树继续深度优先遍历
+}
+int main() {
+	cin >> n;
+	for (int i = 1; i < n; i++) {
+		cin >> a >> b;
+		tr[a].push_back(b); // 节点 a 新增一个子节点 b
+	}
+	dfs(1); // 从根节点出发向下遍历 return 0;
+}
+```
 
 
 
